@@ -12,7 +12,7 @@ export class Characters extends Base {
     return this.requestAuth(`/${resourceName}/${id}`, token);
   }
 
-  getCharacterQuotes(id: string, token?: string): Promise<{ docs: Quote[] }> {
-    return this.requestAuth(`/${resourceName}/${id}/quote`, token);
+  getCharacterQuotes(character_id: string, token?: string): Promise<{ docs: Quote[] }> {
+    return this.requestAuth(`/${resourceName}/${character_id}/quote`, token);
   }
 }
