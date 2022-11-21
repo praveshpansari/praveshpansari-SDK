@@ -12,7 +12,7 @@ export class Movies extends Base {
     return this.requestAuth(`/${resourceName}/${id}`, token);
   }
 
-  getQuotes(id: string, token?: string): Promise<{ docs: Quote[] }> {
+  getMovieQuotes(id: string, token?: string): Promise<{ docs: Quote[] }> {
     return this.requestAuth(`/${resourceName}/${id}/quote`, token);
   }
 }

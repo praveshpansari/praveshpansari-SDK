@@ -4,7 +4,7 @@ import { Quote } from "../types.js";
 const resourceName = "quote";
 
 export class Quotes extends Base {
-  getAllQuotes(token?: string): Promise<{ docs: Quote[] }> {
+  getQuotes(token?: string): Promise<{ docs: Quote[] }> {
     return this.requestAuth(`/${resourceName}`, token);
   }
 

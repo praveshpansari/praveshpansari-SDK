@@ -12,7 +12,7 @@ export class Books extends Base {
     return this.request(`/${resourceName}/${id}`);
   }
 
-  getChapters(id: string): Promise<{ docs: Chapter[] }> {
+  getBookChapters(id: string): Promise<{ docs: Chapter[] }> {
     return this.request(`/${resourceName}/${id}/chapter`);
   }
 }

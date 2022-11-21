@@ -4,7 +4,7 @@ import { Chapter } from "../types.js";
 const resourceName = "chapter";
 
 export class Chapters extends Base {
-  getAllChapters(token?: string): Promise<{ docs: Chapter[] }> {
+  getChapters(token?: string): Promise<{ docs: Chapter[] }> {
     return this.requestAuth(`/${resourceName}`, token);
   }
 
